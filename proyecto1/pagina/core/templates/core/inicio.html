@@ -1,0 +1,74 @@
+{% extends 'core/baselogin.html' %}
+{% load static %}
+{% block content %}
+    <style>
+      label.error{
+          color: rgb(173, 24, 24);
+          font-style: italic;
+          line-height: 20px;
+          font-size: 14px;
+      }
+      input.error{
+          border-color: #ff0000;
+      }
+
+      input.error:focus{
+          border-color: #ff0000;
+          box-shadow: 0 0 0 0.25rem rgb(255 0 0 / 25%);
+      }
+  </style>
+    <div class="login-box" style="width: 50%;">
+        <h1>Inicia sesion</h1>
+        <form action="{% url 'principal' %}" id="formulario">
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre">
+        </div>
+          <label for="correo">Email</label>
+          <input type="text" name="correo" id="correo" placeholder="Ingrese su email">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" name="contrasena" id="contrasena" placeholder="Ingrese contraseña">
+          <br>
+          <div class="col-12">
+            <input type="submit" class="button" name="enviar"  value="Iniciar sesion">
+          </div>
+          <div class="boton">
+            <a class= "button" href="{% url 'registro' %}" >No tienes cuenta? Registrate</a>
+          </div>
+        </form>
+    </div>
+    <script>  
+      $(document).ready(function(){
+          $("#formulario").validate({
+              rules: {
+                    nombre: {
+                        required: true,
+                        minlength: 5
+                    },
+                    correo: {
+                        required: true,
+                        email: true
+                    },
+                    contrasena: {
+                        required: true,
+                        minlength: 8
+                    }
+              },
+              messages: {
+                nombre: {
+                        required: "Ingrese su nombre completo.",
+                        minlength: "Ingrese al menos 5 caracteres."
+                    },
+                    correo: {
+                        required: "Ingrese su email",
+                        email: "Ingrese un email válido"
+                    },
+                    contrasena: {
+                          required: "Ingrese una contraseña de 8 carácteres",
+                          minlength: "Ingrese contraseña con 8 carácteres"
+                    }
+               }
+            });
+        });
+  </script>
+{% endblock %}

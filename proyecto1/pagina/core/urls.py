@@ -1,0 +1,33 @@
+from django.urls import path, include
+from . import views
+
+urlpatterns = [
+    path('', views.home, name="home"),
+    path('nosotros', views.nosotros, name="nosotros"),
+    path('inicio', views.inicio, name="inicio"),
+    path('artistas', views.artistas, name="artistas"),
+    path('tipo', views.tipo, name="tipo"),
+    path('anonimo', views.anonimo, name="anonimo"),
+    path('informacion1', views.informacion1, name="informacion1"),
+    path('informacion2', views.informacion2, name="informacion2"),
+    path('informacion3', views.informacion3, name="informacion3"),
+    path('deartistas', views.deartistas, name="deartistas"),
+    path('subir', views.subir, name="subir"),
+    path('formulario', views.formulario, name="formulario"),
+    path('registro', views.registro, name="registro"),
+    path('principal', views.principal, name="principal"),
+    path('leonardo', views.leonardo, name="leonardo"),
+    path('escultura', views.escultura, name="escultura"),
+    path('pensador', views.pensador, name="pensador"),
+    path('discobolo', views.discobolo, name="discobolo"),
+    path('venus', views.venus, name="venus"),
+    path('monalisa', views.monalisa, name="monalisa"),
+    path('solnaciente', views.solnaciente, name="solnaciente"),
+    path('pintura2', views.pintura2, name="pintura2"),
+    path('pintura3', views.pintura3, name="pintura3"),
+    path('tipoarte', views.tipoarte, name="tipoarte"),
+    path('apiobras', views.apiobras, name="apiobras"),
+    path('tablaobra', views.tablaobra, name="tablaobra"),
+    path('modificar/<autor>', views.modificar, name="modificar"),
+    path('elimina<autor>', views.eliminar, name="eliminar"),
+]

@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    form.formu{
+        width: 1300px;
+        margin: auto;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+    }
+</style>
+  <title>modificar vehiculo</title>
+    <form class="formu"  action="" method="POST">
+      {% csrf_token %}
+      <div class="form-group mb-3">
+        {{ form.as_table }}
+      </div>
+      <button type="reset" class="btn btn-secondary">Limpiar</button>
+      <button type="submit" class="btn btn-primary">modificar</button>
+      {% if mensaje != None %}
+      <div id="error" role="alert" class="alert alert-{{color}}">
+        {{mensaje}}
+      </div>
+      {% endif %}
+    </form>
+
+{% endblock%}

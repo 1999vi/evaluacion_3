@@ -1,0 +1,34 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content %}
+
+<style>
+    #obra{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        align-items: center;
+        padding: 10px;
+    }
+</style>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js%22%3E"></script>
+<div class="container">
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="enviar" class="btn btn-outline-primary">Actualizar obra</button>
+    </div>
+    <img src="{% static 'core/img/cena.jpeg' %}" alt="obra random" id="obra">
+</div>
+<script>
+    $("#enviar").click(function(){
+    $(document).ready(function () {
+        $.get("https://api.harvardartmuseums.org/image?apikey=d8c73d12-3b0d-47af-8021-b683b0d92f22&sort=random", function (data) {
+            $("#obra").attr("src", data.records[0].baseimageurl);
+        });  
+    });
+});
+</script>
+{% endblock %}

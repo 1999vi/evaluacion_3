@@ -1,0 +1,77 @@
+{% extends 'core/baseartista.html' %}
+{% load static %}
+{% block content %}
+
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">Leonardo da Vinci</h1>
+                <p class="hero_copy">Conoce la historia y obras de Leonardo da Vinci</p>
+                <a href="{% url 'subir' %}" class="hero_cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Biografia</h1>
+                <img src="https://www.muycomputer.com/wp-content/uploads/2019/05/MonaLisa.jpg" class="instructor_img" alt="La Mona Lisa">
+                <h2 class="instructor_name">La Mona Lisa/La Gioconda</h2>
+                <p class="instructor_tag">Retrato</p>
+                <p class="instructor_paragraph">El Retrato de Lisa Gherardini, esposa de Francesco del Giocondo, ​ más conocido como La Gioconda o La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci. Fue adquirida por el rey Francisco I de Francia a comienzos del siglo XVI y desde entonces es propiedad del Estado francés.</p> 
+            </div>
+            <br><br><hr><br><br>
+            
+            <section class="contenedor Vida-perruna">
+                <div class="contenedor-Vida-perruna">
+                  <img class="img-monalisa" src="https://www.muycomputer.com/wp-content/uploads/2019/05/MonaLisa.jpg" alt="Perrito de muestra" class="imagen-vida-perruna">
+                  <div class="contenedor-textos">
+                     <h3></h3>
+                     <pre>Artista: Leonardo da Vinci</pre>
+                     <hr>
+                     <pre>Tamaño: 77 cm x 53 cm</pre>
+                     <hr>
+                     <pre>Ubicación: Museo del Louvre (desde 1797)</pre>
+                     <hr>
+                     <pre>Modelo: Lisa Gherardini</pre>
+                     <hr>
+                     <pre>Fecha de creación: 1503</pre>   
+                     <hr>      
+                     <pre>Período: Renacimiento</pre>
+                     <hr>
+                 </div>
+                </div>
+            </section> 
+ 
+      <br><br><hr><br><br>
+        <section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="{% url 'tipo' %}" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+
+        <section class="course container">
+            <figure class="course_picture course_picture--right">
+                <img src="https://i1.wp.com/sonria.com/wp-content/uploads/2016/04/arte2.jpg?resize=1080%2C550&ssl=1" class="course_img" alt="concepto de arte">
+            </figure>
+
+            <div class="course_about course_about--left">
+                <h2 class="title">¿Que son los conceptos en el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <!--<a href="#" class="cta">Ver tipo de conceptos</a>-->
+            </div>
+        </section>        
+        
+    </main>
+{% endblock %}

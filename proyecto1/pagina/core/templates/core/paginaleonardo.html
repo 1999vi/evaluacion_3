@@ -1,0 +1,117 @@
+{% extends 'core/baseartista.html' %}
+{% load static %}
+{% block content %}
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">Leonardo da Vinci</h1>
+                <p class="hero_copy">Conoce la historia y obras de Leonardo da Vinci</p>
+                <a href="{% url 'subir' %}" class="hero_cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Biografia</h1>
+                <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" class="instructor_img" alt="Leonardo">
+                <h2 class="instructor_name">Leonardo da Vinci</h2>
+                <p class="instructor_tag">Arquitecto, escultor, ingeniero, inventor y pintor</p>
+                <p class="instructor_paragraph">(Vinci, 15 de abril de 1452​-Amboise, 2 de mayo de 1519) fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo,​ artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</p>
+            </div>
+
+        <section class="nuestros-perritos">
+            <div class="contenedor">
+              <h2 class="titulo-artistas">Sus obras mas destacadas</h2>
+              <div class="galeria-perritos">
+                <div class="imagen-perritos">
+                  <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17C16/production/_117320379_giocondacerca.jpg" alt="Mona Lisa">
+                  <div class="hover-galeria">
+                    <a href="{% url 'monalisa' %}"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                    <p>Mona Lisa</p>
+                  </div>
+                </div>
+                <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/300px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg" alt="La última cena">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>La última cena </p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://consumer.healthday.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMzYzNDI4Ny9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY1Njg4MDQwM30.bnl0fFKaPrJal-b3sDhjQkwMhxIOdnLmK2JtJgpYKTw/image.jpg?width=1245&quality=85&coordinates=0%2C74%2C0%2C74&height=700" alt="Hombre de Vitruvio">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Hombre de Vitruvio</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://images-na.ssl-images-amazon.com/images/I/A1Y5zzqLzhL.jpg" alt="Salvator Mundi">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Salvator Mundi</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://aws.traveler.es/prod/designs/v1/assets/940x742/166635.jpg" alt="La dama del armiño">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>La dama del armiño</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Leonardo_helicopter.JPG/220px-Leonardo_helicopter.JPG" alt="Diseño de un helicóptero">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Diseño de un helicóptero</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://media.wsimag.com/attachments/041f89f5541f4873830b814f30f667c401854d0a/store/fill/860/645/6f59dec55ae28551d31d0d00c0ae0b4152086aa1595a5ad575bb7438a2d8/Seccion-de-Baco-o-San-Juan-Bautista-1510-1515.jpg" alt="San Juan Bautista">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>San Juan Bautista</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S7AA5UPZGVGHRHWGVHNLLSHQOI.jpg" alt="La Virgen, el Niño Jesús y Santa Ana">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>La Virgen, el Niño Jesús y Santa Ana</p>
+                 </div>
+               </div>
+            </div>
+        </div>
+      </section>   
+
+        <section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="{% url 'tipo' %}" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+
+        <section class="course container">
+            <figure class="course_picture course_picture--right">
+                <img src="https://i1.wp.com/sonria.com/wp-content/uploads/2016/04/arte2.jpg?resize=1080%2C550&ssl=1" class="course_img" alt="concepto de arte">
+            </figure>
+
+            <div class="course_about course_about--left">
+                <h2 class="title">¿Que son los conceptos en el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <!--<a href="#" class="cta">Ver tipo de conceptos</a>-->
+            </div>
+        </section>        
+        
+    </main>
+{% endblock %}

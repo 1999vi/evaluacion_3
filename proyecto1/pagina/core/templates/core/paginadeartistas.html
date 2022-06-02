@@ -1,0 +1,125 @@
+{% extends 'core/baseartista.html' %}
+{% load static %}
+{% block content %}
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">NUESTROS ARTISTAS</h1>
+                <p class="hero_copy">Busca a nuestros artistas y conoce su historia y obras</p>
+                <a href="{% url 'subir' %}" class="hero_cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://image.flaticon.com/icons/png/512/1983/1983187.png" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Artista destacado</h1>
+                <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" class="instructor_img" alt="Leonardo">
+                <h2 class="instructor_name">Leonardo da Vinci</h2>
+                <p class="instructor_tag">Arquitecto, escultor, ingeniero, inventor y pintor</p>
+                <p class="instructor_paragraph">Leonardo da Vinci fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, ​ artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</p>
+            </div>
+
+        <section class="nuestros-perritos">
+            <div class="contenedor">
+              <h2 class="titulo-artistas">Nuestros Artistas</h2>
+              <div class="galeria-perritos">
+                <div class="imagen-perritos">
+                  <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" alt="Leonardo da Vinci">
+                  <div class="hover-galeria">
+                    <a href="{% url 'leonardo' %}"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                    <p>Leonardo da Vinci</p>
+                    <p>obras: 8</p>
+                  </div>
+                </div>
+                <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg" alt="Pablo Picasso">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Pablo Picasso</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://www.holland.com/upload_mm/2/5/2/56781_fullimage_vincent_van_gogh.jpg" alt="Vincent van Gogh">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Vincent van Gogh</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg" alt="Miguel Ángel">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Miguel Ángel</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Salvador_Dal%C3%AD_1939.jpg" alt="Salvador Dalí">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Salvador Dalí</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Claude_Monet_1899_Nadar_crop.jpg" alt="Claude Monet">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Claude Monet</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydGlzdFwvaW1hZ2VGaWxlXC9kaWVnby12ZWxhenF1ZXotYXV0b3JyZXRyYXRvLTQ1LXgtMzgtY20tY29sZWNjaW9uLXJlYWwtYWNhZGVtaWEtZGUtYmVsbGFzLWFydGVzLWRlLXNhbi1jYXJsb3M/tbXVzZW8tZGUtYmVsbGFzLWFydGVzLWRlLXZhbGVuY2lhLmpwZyIsInJlc2l6ZSw2MDAsNjAwIl19.7EasG4AeqQ68q5HPDgTWW_-hRRdhQ1qqxgGXiEKuVwE.jpg" alt="Diego Velázquez">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Diego Velázquez</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+               <div class="imagen-perritos">
+                 <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSYE4fGNH5SL4ijXtn4_dD4y-I04fFY4eDVC8eMXllPOoz9lbY3POuvvtOV-tXY" alt="Francisco de Goya">
+                 <div class="hover-galeria">
+                   <a href="#"><img src="https://cdn.discordapp.com/attachments/712339512168284191/830562558205362176/icono1.png" alt=""></a>
+                   <p>Francisco de Goya</p>
+                   <p>obras: 0</p>
+                 </div>
+               </div>
+            </div>
+        </div>
+      </section>   
+
+        <section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="{% url 'tipo' %}" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+
+        <section class="course container">
+            <figure class="course_picture course_picture--right">
+                <img src="https://i1.wp.com/sonria.com/wp-content/uploads/2016/04/arte2.jpg?resize=1080%2C550&ssl=1" class="course_img" alt="concepto de arte">
+            </figure>
+
+            <div class="course_about course_about--left">
+                <h2 class="title">¿Que son los conceptos en el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+               <!--<a href="#" class="cta">Ver tipo de conceptos</a>-->
+            </div>
+        </section>        
+        
+    </main>
+{% endblock %}

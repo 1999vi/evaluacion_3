@@ -1,0 +1,106 @@
+{% extends 'core/basesubir.html' %}
+{% load static %}
+{% block content %}
+    <style>
+      label.error{
+          color: rgb(128, 20, 20);
+          font-style: italic;
+          line-height: 20px;
+          font-size: 17px;
+          
+      }
+      input.error{
+          border-color: #ff0000;
+      }
+
+      input.error:focus{
+          border-color: #ff0000;
+          box-shadow: 0 0 0 0.25rem rgb(255 0 0 / 25%);
+      }
+  </style>
+    <form action="{% url 'home' %}" id="formulario" style="width: 80%;">
+        <h2>Sube tu obra de arte</h2>
+        <div class="form-group">
+        <input type="text" name="nombre" class="form-label" id="nombre" placeholder="Nombre del artista">
+        </div><br>
+        <div class="form-group">
+        <input type="text" name="correo" class="form-label" placeholder="Correo">
+        </div><br>
+        <div class="form-group">
+        <input type="text" name="telefono" class="form-label" placeholder="Telefono">
+        </div><br>
+        <div class="form-group">
+        <input type="text" name="asunto" class="form-label" placeholder="Nombre de la obra">
+        </div><br>
+        <div class="form-group">
+        <p>
+            Sube un archivo:
+            <input type="file" class="form-label" name="archivosubido">
+        </p>
+        </div><br>
+        <div class="form-group">
+        <input type="text" name="informacion" class="form-label" placeholder="Informacion sobre la obra">
+        </div><br>
+        <div class="col-12">
+          <input type="submit" class="button" name="enviar" onclick="hizoClick()" value="Enviar">
+        </div>
+    </form>
+    <script>
+      function hizoClick() {
+            alert("Su obra esta en revisión, le enviaremos un correo para decirle el estado de su obra.");
+          };
+    </script>
+        <script>
+            $(document).ready(function(){
+            //Este es el comentario de una linea en javascript
+            $("#formulario").validate({
+                rules: {
+                    nombre: {
+                        required: true,
+                        minlength: 5
+                    },
+                    correo: {
+                        required: true,
+                        email: true
+                    },
+                    telefono: {
+                        required: true,
+                        minlength: 8
+                    },
+                    asunto:{
+                        required: true
+                    },
+                    archivosubido:{
+                      required: true
+                    },
+                    informacion: {
+                        required: true
+                    }
+                },
+                messages: {
+                    nombre: {
+                        required: "Por favor ingrese su nombre completo.",
+                        minlength: "Ingrese al menos 5 caracteres."
+                    },
+                    correo: {
+                        required: "Ingrese su correo electrónico",
+                        email: "Ingrese un correo válido"
+                    },
+                    telefono: {
+                        required: "Ingrese su número de teléfono",
+                        minlength: "Indique al menos 8 números"
+                    },
+                    asunto: {
+                        required: "Ingrese el nombre de la obra"
+                    },
+                    archivosubido: {
+                        required: "Suba su obra acá"
+                    },
+                    informacion: {
+                        required: "Ingrese la descripción de su obra"
+                    }
+                }
+            });
+        });
+            </script>
+{% endblock %}

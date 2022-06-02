@@ -1,0 +1,84 @@
+{% extends 'core/baseformulario.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  label.error{
+      color: #fff;
+      font-style: italic;
+      line-height: 0;
+      font-size: 18px;
+  }
+  input.error{
+      border-color: #ff0000;
+  }
+
+  input.error:focus{
+      border-color: #ff0000;
+      box-shadow: 0 0 0 0.25rem rgb(255 0 0 / 25%);
+    }
+</style>
+  <div class= "formu" >
+    <form action="{% url 'nosotros' %}" id="formulario">
+      <h2>Contacto</h2>
+        <div class="form-group">
+            <label for="nombre" class="form-label">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Fernando Sepúlveda" class="form-control">
+        </div><br>
+        <div class="form-group">
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" name="email" placeholder="Fernandos@gmail.com" class="form-control">
+        </div><br>
+        <div class="form-group">
+            <label for="numero" class="form-label">Numero de telefono: </label>
+            <input type="numero" name="numero" placeholder="978463741" class="form-control">
+        </div><br>
+        <div class="mb-3">
+            <label for="Comentario" class="form-label">Comentario </label>
+            <textarea class="form-control" name ="comentario" placeholder="Comentario" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="col-12">
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </form>
+</div>
+<script>
+  $(document).ready(function(){
+      $("#formulario").validate({
+          rules: {
+              nombre: {
+                  required: true,
+                  minlength: 5
+              },
+              email: {
+                  required: true,
+                  email: true
+              },
+              numero: {
+                  minlength: 9
+              },
+              comentario: {
+                  required: true
+              }
+          },
+          messages: {
+              nombre: {
+                  required: "Por favor ingrese su nombre completo",
+                  minlength: "Debe ingresar al menos 5 caracteres"
+              },
+              email: {
+                  required: "Por favor ingrese su direccion de correo",
+                  email: "Por favor ingrese un correo válido"
+              },
+              numero: {
+                  minlength: "Ingrese 9 digitos por favor"
+              },
+              comentario: {
+                  required: "Porfavor ingrese algun comentario"
+              }
+          }
+      });
+  });
+</script>
+{% endblock %}

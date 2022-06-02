@@ -1,0 +1,74 @@
+{% extends 'core/baseartista.html' %}
+{% load static %}
+{% block content %}
+
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">ARTISTAS Y SUS OBRAS</h1>
+                <p class="hero_copy">Acontinuacion veras que son los artista, los tipos de obras y sus conceptos</p>
+                <a href="{% url 'subir' %}" class="cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://image.flaticon.com/icons/png/512/1983/1983187.png" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Artista destacado</h1>
+                <img src="https://pavlov.psyciencia.com/2019/05/2e816cc5-leonardo-davinci-tdah.jpg" class="instructor_img" alt="Leonardo">
+                <h2 class="instructor_name">Leonardo da Vinci</h2>
+                <p class="instructor_tag">Arquitecto, escultor, ingeniero, inventor y pintor</p>
+                <p class="instructor_paragraph">Leonardo da Vinci fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, ​ artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</p>
+            </div>
+
+        </section>
+
+        <section class="about container">
+
+            <div class="about_course">
+                <h2 class="title title--border" >¿Que es un artista?</h2>
+
+                <p class="about_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam reprehenderit cumque tempora perspiciatis unde ab atque nam asperiores accusamus laborum eos, inventore nobis repellendus debitis porro blanditiis cum ducimus.</p>
+
+                <p class="about_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam reprehenderit cumque tempora perspiciatis unde ab atque nam asperiores accusamus laborum eos, inventore nobis repellendus debitis porro blanditiis cum ducimus.</p>
+                
+                <a href="{% url 'deartistas' %}" class="cta">Ver la galeria de artistas</a>
+            </div>
+
+            <figure class="about_picture">
+                <img src="https://cdn.pixabay.com/photo/2018/02/05/11/10/silhouette-3131943_1280.png" class="about_img" alt="cilueta de artista">
+            </figure>
+
+        </section>
+
+        <section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="{% url 'tipo' %}" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+
+        <section class="course container">
+            <figure class="course_picture course_picture--right">
+                <img src="https://i1.wp.com/sonria.com/wp-content/uploads/2016/04/arte2.jpg?resize=1080%2C550&ssl=1" class="course_img" alt="concepto de arte">
+            </figure>
+
+            <div class="course_about course_about--left">
+                <h2 class="title">¿Que son los conceptos en el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <!--<a href="#" class="cta">Ver tipo de conceptos</a>-->
+            </div>
+        </section>                
+    </main>
+    {% endblock %}
+

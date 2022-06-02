@@ -1,0 +1,60 @@
+{% extends 'core/basetipoart.html' %}
+{% load static %}
+{% block content %}	
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">NUESTRO ARTE MAS DESTACADO</h1>
+                <p class="hero_copy">Busca nuestro arte  mas destacado</p>
+                <a href="{% url 'subir' %}" class="cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://cdn.discordapp.com/attachments/831584930827075599/833157523410255892/Designer__Flatline.png" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Obra Destacada</h1>
+                <img src="https://www.guiaviajesa.com/wp-content/uploads/2015/06/la-creacion-de-adan-obra-de-arte-en-la-capilla-sixtina-888x388.jpg" class="instructor_img" alt="La creación de Adán">
+                <h2 class="instructor_name">La creación de Adán</h2>
+                <p class="instructor_tag">Historia</p>
+                <p class="instructor_paragraph">La creación de Adán es un fresco en el techo de la Capilla Sixtina, pintado por Miguel Ángel alrededor del año 1511. Ilustra el episodio bíblico del Génesis en el cual Dios le da vida a Adán, el primer hombre. Cronológicamente es el cuarto de los paneles que representan episodios del Génesis en el techo de la capilla, fue de los últimos en ser completados y es una de las obras de arte más apreciadas y reconocidas en el mundo.</p>
+            </div>
+
+        </section>
+
+	<section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="#" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+        <section class="nuestros-arte">
+            <div class="contenedor">
+                <nav class="nav-pito">
+                    <h2>Tipo de Arte |</h2>
+                    <a href="{% url 'tipo' %}" class="nav-p">Pinturas</a>
+                    <a href="{% url 'escultura' %}" class="nav-p">Esculturas</a>
+                </nav>
+              <div class="galeria-arte">
+                <div class="imagen-arte">
+                  <a href="{% url 'solnaciente' %}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/300px-Monet_-_Impression%2C_Sunrise.jpg" alt="sol naciente"></a>
+                </div>
+                <div class="imagen-arte">
+                 <a href="{% url 'pintura2' %}"><img src="https://i1.wp.com/moovemag.com/wp-content/uploads/2019/01/amarillo-rojo-y-azul-wassily-kandinsky-1925.jpg?fit=700%2C450&ssl=1" alt="Amarillo, rojo y azul"></a>
+               </div>
+               <div class="imagen-arte">
+                 <a href="{% url 'pintura3' %}"><img src="https://www.hsfafdp.org/images/temp/LaVirgendelaPradera.jpg" alt="Virgen del prado"></a>
+               </div>            
+              </div>
+            </div>
+{% endblock %}

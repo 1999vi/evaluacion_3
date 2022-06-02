@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+    {% block content %}
+    <style>
+        h1 {
+            text-align: center;
+        };
+        
+    </style>
+    <h1 >Listado de obras</h1>
+    <br>
+    <table class="table table-striped table-borderer table-hover align-middle cellspacing  ">
+        <thead>
+            <tr>
+                <th>Autor</th> 
+                <th>Nombre obra</th>
+                <th>Descripcion</th>
+                <th>Historia - Año</th>
+                <th>Tecnica</th>
+                <th>Precio</th>
+                <th>Imagen obra</th>
+                <th>Concepto</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for Obra in obras %}
+            <tr>
+            <td >{{Obra.autor}}</td>
+            <td>{{Obra.nombre}}</td>
+            <td>{{Obra.descripcion}}</td>
+            <td>{{Obra.historia}}</td>
+            <td>{{Obra.tecnica}}</td>
+            <td>{{Obra.precio}}</td>
+            <td><img src="{{Obra.imagen}} " width="125" height="125" /></td>
+            <td>{{Obra.concepto.nombreConcepto}}</td>
+            <td><a href="{% url 'modificar' Obra.autor %}" class="btn btn-primary">modificar</a></td>
+            <td><a href="{% url 'eliminar' Obra.autor %}" class="btn btn-light">eliminar</a></td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    {% endblock %}
+  

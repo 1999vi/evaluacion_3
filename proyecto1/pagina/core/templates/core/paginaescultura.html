@@ -1,0 +1,60 @@
+{% extends 'core/basetipoart.html' %}
+{% load static %}
+{% block content %}        
+        <div class="hero_container container">
+            <div class="hero_texts">
+                <h1 class="hero_title">NUESTRAS ESCULTURAS MAS DESTACADAS</h1>
+                <p class="hero_copy">Busca nuestro arte  mas destacado</p>
+                <a href="{% url 'subir' %}" class="cta">¿Quieres subir una obra propia?</a>
+            </div>
+
+            <img src="https://cdn.discordapp.com/attachments/831584930827075599/833157523410255892/Designer__Flatline.png" class="hero_img" alt="Artista">
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="instructor container">
+
+            <div class="instructo_container">
+                <h1 class="artista_destacado">Obra Destacada</h1>
+                <img src="https://esculturas.info/wp-content/uploads/2019/07/el_pensador_escultura_rodin.jpg" class="instructor_img" alt="EL PENSADOR">
+                <h2 class="instructor_name">EL PENSADOR</h2>
+                <p class="instructor_tag">Historia</p>
+                <p class="instructor_paragraph">Estatua fundida en bronce de tendencia impresionista, que originalmente se llamó ¨El Poeta¨ y luego¨Dante Pensando¨. Tiene la figura de un hombre desnudo sentado en una roca donde su autor Auguste Rodin quiso representar el pensar y la poesía. Presenta a Dante a las puertas del infierno</p>
+            </div>
+
+        </section>
+
+	<section class="course container">
+            <figure class="course_picture">
+                <img src="https://cdn.shopify.com/s/files/1/0189/7149/2452/products/product-image-822525928.jpg?v=1573114621" class="course_img" alt="pintura de mariposa">
+            </figure>
+
+            <div class="course_about">
+                <h2 class="title">¿Que es el arte?</h2>
+                <p class="about_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, libero a sit natus suscipit sunt odio aspernatur adipisci tenetur, recusandae commodi vel rem assumenda expedita quibusdam repellendus ut doloremque exercitationem.</p>
+                <a href="#" class="cta">Ver galeria de arte</a>
+            </div>
+        </section>
+        <section class="nuestros-arte">
+            <div class="contenedor">
+                <nav class="nav-pito">
+                    <h2>Tipo de Arte |</h2>
+                    <a href="{% url 'tipoarte' %}" class="nav-p">Pinturas</a>
+                    <a href="{% url 'escultura' %}" class="nav-p">Esculturas</a>
+                </nav>
+              <div class="galeria-arte">
+                <div class="imagen-arte">
+                  <a href="{% url 'pensador' %}"><img src="https://esculturas.info/wp-content/uploads/2019/07/el_pensador_escultura_rodin.jpg" alt="EL PENSADOR"></a>
+                </div>
+                <div class="imagen-arte">
+                 <a href="{% url 'discobolo' %}"><img src="https://lasesculturas.com/wp-content/uploads/2019/08/discobolo-miron.jpg" alt=" El Discóbolo"></a>
+               </div>
+               <div class="imagen-arte">
+                 <a href="{% url 'venus' %}"><img src="https://mywowo.net/media/images/cache/parigi_museo_louvre_04_venere_di_milo_jpg_1200_630_cover_85.jpg" alt="VENUS DE MILO"></a>
+               </div>            
+              </div>
+            </div>
+{% endblock %}

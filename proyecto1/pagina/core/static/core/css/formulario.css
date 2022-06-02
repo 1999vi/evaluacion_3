@@ -1,0 +1,72 @@
+body{
+    background-image: url(https://cdn.forbes.com.mx/2017/04/7_.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: monospace;
+}
+
+.form-label{
+    color: #fff;
+    margin: auto;
+}
+
+.formu{
+    margin: auto;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    background: rgba(56, 54, 65, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.col-12{
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000000;
+}
+
+@media screen and (max-width:480px) {
+    form{
+        width: 100%;
+    }
+    
+}

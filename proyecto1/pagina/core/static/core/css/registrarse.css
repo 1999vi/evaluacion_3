@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://cdn.culturagenial.com/es/imagenes/1873-claude-monet-037-cke.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 110vh;
+  }
+  
+  .login-box {
+    width: 450px;
+    height: 660px;
+    background: hsla(36, 100%, 90%, 0.596) ;
+    color: #000000;
+    top: 58%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 40px;
+  }
+    
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="button"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .col-12{
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn{
+  color: #fff;
+  background-color: #000000;
+}

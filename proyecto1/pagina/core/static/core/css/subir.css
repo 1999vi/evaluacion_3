@@ -1,0 +1,87 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/0a/5d/c1/0a5dc1adf1e50513b23e3dbfa5e588d1.jpg);
+    background-size: 100vw 110vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: monospace;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+.mapa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapa img{
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    background: rgba(177, 174, 190, 0.589);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, text{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: 10px;
+}
+
+.button{
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    
+  }
+
+  .btn{
+    color: #fff;
+    background: #000000;
+    font-size: 17px;
+  }
+
+#boton{
+    background: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    form{
+        width: 100%;
+    }
+    
+}
+
